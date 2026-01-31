@@ -1,0 +1,110 @@
+<!-- Countdown-Timer.html
+ Professional countdown time projects have the features Responsive,accessible, customizable, set target date/time, start/pause/reset, presets, live ARIA updates
+ Author:  Maavia Gulshan   -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown-Timer</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <main class="card" role="main">
+        <header>
+            <div>
+                <h1>Countdown-Timer</h1>
+                <p>Responsive . Acessible . Easy to customize . Ready for GitHub Pages </p>
+            </div>
+            <div class="meta">Built for resume / Portfolio</div>
+        </header>
+
+        <div class="grid">
+            <section>
+                <div class="timer" aria-live="polite" aria-atomic="true" id="display">
+
+                    <div class="segment">
+                        <div class="value" id="days">00</div>
+                        <div class="label">Days</div>
+                    </div>
+
+                   <div class="segment">
+                    <div class="value" id="hours">00</div>
+                    <div class="label">Hours</div>
+                  </div>  
+                   
+                  <div class="segment">
+                    <div class="value" id="minutes">00</div>
+                    <div class="label">Minutes</div>
+                  </div>
+
+                  <div class="segment">
+                    <div class="value" id="seconds">00</div>
+                    <div class="label">Seconds</div>
+                  </div>
+                   </div>
+
+                   <div class="controls">
+                    <label for="target" class="row">Set target date &  time
+                        <input type="datetime-local" id="target" aria-label="Target date & time">
+                       </label>
+                    
+                       <div class="row presets" aria-hidden="false">
+                        <button class="btn btn-muted small" data-add="3600">+1 Hour</button>
+                        <button class="btn btn-muted small" data-add="86400">+1 Day</button>
+                        <button class="btn btn-muted small" data-add="604800">+1 week</button>
+                        <button class="btn btn-muted small" id="preset-year">New Year</button>
+                       </div>
+
+                       <div class="row">
+                        <button class="btn btn-primary" id="start">Start</button>
+                        <button class="btn btn-muted" id="pause">Pause</button>
+                        <button class="btn btn-ghost" id="reset">Reset</button>
+                       </div>
+
+                       <div class="row">
+                        <div class="label" id="status">Status: <span id="statusText">Idle</span></div>
+                       </div>
+
+                       <div class="row small" style="gap: 10px;">
+                        <button class="btn btn-muted" id="export-link">Copy shareable link</button>
+                          <button class="btn btn-muted" id="download-ics">Download-ics</button>
+                     </div>
+
+                      <footer class="small">Tip: Use the <strong>datetime-local</strong> field to set a specific moment(local time).On GitHub , the  countdown will run in the user's browser. </footer>
+                   </div>
+                  </section>
+
+               <aside>
+                <div style="background: rgba(255, 255, 255, 0.02); padding: 14px; border-radius: 10px;">
+                    <h3 style="margin-top: 0; margin-bottom: 8px;">How this works</h3>
+                    <ol style="color: var(--muted); padding-left:18px;margin: 0;font-size: 14px;">
+                        <li>Set target date/time and  click <strong>Start</strong>.</li>
+                        <li>Script calculates remaining miliseconds and update every second.</li>
+                        <li>Pause stops the timer but keeps the target;Reset clears the target and display </li>
+                    </ol>
+
+                    <h4 style="margin-top: 12px;margin-bottom: 6px;">Accessbility</h4>
+                    <p style="color: var(--muted); font-size: 13px;margin: 0;">The display uses <code>aria-live</code> so, screen readers announce changes.Controls have labels.</p>
+
+                     <h4 style="margin-top: 12px;margin-bottom: 6px;">Next steps for resume / GitHub</h4>
+                     <ul style="color: var(--muted); font-size: 13px;margin: 0;padding-left:18px ;">
+                        <li>Split CSS/JS into separate files and add README.</li>
+                        <li>Include a screenshot and a short demo link (GitHub Pages).</li>
+                        <li>Add tests (e.g , unit tests for time formatting) and mention technologies used.</li>
+                     </ul>
+               
+                </div>
+               </aside>
+          
+        </div>
+    </main>
+
+      <script src="first.js"></script>
+ </body>
+ </html>
+
+
+
+
+  
