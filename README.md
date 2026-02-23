@@ -32,6 +32,10 @@ A **responsive, accessible, and customizable countdown timer** built with **HTML
 - **CSS3** – Modern gradients, glass-effect card, responsive design.
 - **JavaScript (ES6)** – Timer logic, URL hydration, clipboard, and .ics export.
 
+- --
+
+🌐 Live Demo: [ https://maavia971.github.io/countdown-timer/]
+
 ---
 
 ## 💡 Next Steps / Enhancements
